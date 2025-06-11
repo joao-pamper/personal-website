@@ -1,28 +1,21 @@
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="styles.css">
+    <title>João Pereira</title>
 </head>
 <!-- ============================================ -->
 <!--                 Navigation                   -->
 <!-- ============================================ -->
 
-<header id="cs-navigation">
-    <div class="cs-container">
-        <!--Nav Logo-->
+<header id="nav-header">
+    <div class="nav-container">
+        <!--Nav Title-->
         <a href="https://joaopereira.ca" class="nav-title">
             João Pereira
         </a>
         <!--Navigation List-->
-        <nav class="cs-nav" role="navigation">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" aria-label="mobile menu toggle">
-                <div class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
-                </div>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            <div class="cs-ul-wrapper">
+        <nav class="nav-li" role="navigation">
+              <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
                         <a href="" class="cs-li-link cs-active">
@@ -61,22 +54,24 @@
 <section id="hero-856">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Modern and Professional</span>
-            <h1 class="cs-title">Physical Therapy & Health and Wellness</h1>
             <p class="cs-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus unde id saepe quo. Est, ea! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, provident? Lorem ipsum dolor sit amet consectetur adipisicing.
+                Hi, my name is João! 👋🏼  
+
+                I am a fourth-year computer science student at the University of Alberta. 
+
+                I am passionate about helping people through technology. Currently interested in using cloud, networking, data and a touch of AI. I believe that I can use my technical skills to help bring people what they want, the way they want it.
             </p>
-            <a href="" class="cs-button-solid">Schedule An Appointment</a>
         </div>
         <!--Hero Image-->
+        <img src="/personal-website-photos/img-main.jpeg">
         <picture class="cs-picture">
             <!--Mobile-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
+            <source media="(max-width: 600px)" src="/www/personal-website-photos/img-main.jpeg">
             <!--Tablet-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
+            <source media="(min-width: 601px)" src="/www/personal-website-photos/img-main.jpeg">
             <!--Desktop-->
-            <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
-            <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg" alt="therapy" width="570" height="701">
+            <source media="(min-width: 1024px)" src="/www/personal-website-photos/img-main.jpeg">
+            <img aria-hidden="true" decoding="async" src="/www/personal-website-photos/img-main.jpeg" alt="selfie" width="570" height="701">
             </picture>
     </div>
     <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
