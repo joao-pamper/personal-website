@@ -1,146 +1,139 @@
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <title>João Pereira</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <h1>UI IN DEVELOPMENT...</h1>
+   
         <!-- ============================================ -->
         <!--                 Navigation                   -->
         <!-- ============================================ -->
         <nav>
             <a href="https://joaopereira.ca" class="nav-title">João Pereira</a>
-            <ul class="nav-ul">
-                <li class="nav-item">
-                    <a href="">EXPERIENCE</a>
-                </li>
-                <li class="nav-item">
-                    <a href="">PROJECTS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a href="">CONTACT</a>
-                </li>
-            </ul>
+            <div class="dropdown-wrapper">
+                <button class="dropdown-trigger" id="dropdown-trigger">
+                    <svg  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="dropdown-icon">
+                        <path d="M16 5H0V4h16v1zm0 8H0v-1h16v1zm0-4.008H0V8h16v.992z"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu" id="dropdown-menu">
+                    <li class="dropdown-item"><a href="#experience">EXPERIENCE</a></li>
+                    <li class="dropdown-item"><a href="#projects">PROJECTS</a></li>
+                    <li class="dropdown-item"><a href="#about">ABOUT</a></li>
+                    <li class="dropdown-item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
         </nav>
-
-        <h1>UI IN DEVELOPMENT...</h1>
+        
         <!-- ============================================ -->
         <!--                    Hero                      -->
         <!-- ============================================ -->
-        <div class="hero-container">
-            <div class="hero-content">
-                <p>
-                    Hi, my name is João! 👋🏼  
+        <div class="hero-container" id="hero">
+            <p>
+                
+                    Hi, my name is João! 👋🏼  <br/> <br/>
 
-                    I am a fourth-year computer science student at the University of Alberta. 
+                    I am a fourth-year computer science student at the University of Alberta. <br/> <br/>
 
                     I am passionate about helping people through technology. Currently interested in using cloud, networking, data and a touch of AI. I believe that I can use my technical skills to help bring people what they want, the way they want it.
-                </p>
-            </div>
-            <img src="/personal-website-photos/img-main.jpeg" height="100" width="100">
+                
+            </p>
+            <img src="/www/personal-website-photos/img-main.jpeg"  alt="personal image">
         </div>
-        <h1>UI IN DEVELOPMENT...</h1>
+        
         <!-- ============================================ -->
         <!--            Professional Experience           -->
         <!-- ============================================ -->
-        <section>
-        <div class="timeline-area">
-        <div class="container">
-            <div class="timelines-title">
+        <div class="experience-container" id="experience">
             <h1>Professional Experience</h1>
-            </div>
-            <div class="all-timelines">
-            <!--SINGLE TIMELINE-->
-            <div class="single-timeline">
-                <div class="timeline-date">
-                    <h4>May 2023 </h4>
-                    <h4> |<br/>V</h4>
-                    <h4>Aug 2023</h4>
+            <div class="timeline">
+                <div class="timeline-component">
+                    <div class="timeline-date">May 2023<br/><br/>Aug 2023</div>
+                </div>
+                
+                <div class="timeline-middle">
+                    <div class="timeline-point"></div>
                 </div>
                 <div class="timeline-content">
-                    <h4>Software Engineer Intern - Zoppy Software</h4>
-                    <ul>
-                        <li>Improved payment accuracy for clients by developing and maintaining backend services in TypeScript (NestJS) and MySQL, contributing to an algorithm that calculated payouts based on registration dates.</li>
-                        <li>Enabled data-driven marketing decisions by leading the integration of Google Analytics, resulting in better visibility into website performance for the team.</li>
-                        <li>Delivered critical product updates by managing rapid feature changes and bug fixes in response to user feedback, including database updates and new functionality as the sole on-site developer.</li>
-                        <li>Resolved integration issues with platforms like Shopify and NuvemShop by debugging API calls and analyzing third-party documentation, reducing downtime and improving reliability.</li>
-                        <li>Supported marketing and sales strategy by extracting and delivering SQL-based insights, directly influencing engagement with over 100 clients.</li>
-                    </ul>
+                    Software Engineer Intern - Zoppy Software
+                    <p>Supported full-stack development by building and debugging SQL queries, REST APIs, and frontend updates in Angular, boosting platform responsiveness.</p>
+                </div>
+
+                <div class="timeline-component">
+                    <div class="timeline-date"></div>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-arrow"></div>
+                </div>
+                <div class="timeline-content">
+                    To Be Continued... 
                 </div>
             </div>
-            </div>
-            </div>
         </div>
-        </section>
-        <h1>UI IN DEVELOPMENT...</h1>
+
         <!-- ============================================ -->
         <!--                  Projects                    -->
         <!-- ============================================ -->
-
-        <section id="projects">
-            <div class="projects-container">
-                <div class="projects-title">
-                    <h1>Projects</h1>
-                </div>
-                <div class="single-project-container">
-                    <img src="">
-                    <h4>TattLab</h4>
-                    <p class="single-project-content">
-                        🛠️ Three.js, Flask, Bootstrap <br/>
-                        Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
-                    </p>
-                </div>
-                <div class="single-project-container">
-                    <img src="">
-                    <h4>Dungeon Crawler Game</h4>
-                    <p class="single-project-content">
-                        🛠️ Assembly, RISC-V   <br/>
-                        Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
-                    </p>
-                </div>
-                <div class="single-project-container">
-                    <img src="">
-                    <h4>Moody App</h4>
-                    <p class="single-project-content">
-                        🛠️ Java, XML, Android Studio, Firebase <br/>
-                        Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
-                    </p>
-                </div>
-                <div class="single-project-container">
-                    <img src="">
-                    <h4>Mini Search Engine</h4>
-                    <p class="single-project-content">
-                        🛠️ Python <br/>
-                        Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
-                    </p>
-                </div>
-                <div class="single-project-container">
-                    <img src="">
-                    <h4>Z Terminal App</h4>
-                    <p class="single-project-content">
-                        🛠️ Python, SQLite <br/>
-                        Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
-                    </p>
-                </div>
-                <div class="single-project-container">
-                    <img src="">
-                    <h4>Cruzeiro Calendar Script</h4>
-                    <p class="single-project-content">
-                        🛠️ Python, MongoDB, Google Calendar API <br/>
-                        Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
-                    </p>
-                </div>
+        <div class="projects-container" id="projects">
+            <div class="projects-title">
+                <h1>Projects</h1>
             </div>
-
-        </section>
+            <div class="single-project-container">
+                <img src="">
+                <h4>TattLab</h4>
+                <p class="single-project-content">
+                    🛠️ Three.js, Flask, Bootstrap <br/>
+                    Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
+                </p>
+            </div>
+            <div class="single-project-container">
+                <img src="">
+                <h4>Dungeon Crawler Game</h4>
+                <p class="single-project-content">
+                    🛠️ Assembly, RISC-V   <br/>
+                    Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
+                </p>
+            </div>
+            <div class="single-project-container">
+                <img src="">
+                <h4>Moody App</h4>
+                <p class="single-project-content">
+                    🛠️ Java, XML, Android Studio, Firebase <br/>
+                    Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
+                </p>
+            </div>
+            <div class="single-project-container">
+                <img src="">
+                <h4>Mini Search Engine</h4>
+                <p class="single-project-content">
+                    🛠️ Python <br/>
+                    Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
+                </p>
+            </div>
+            <div class="single-project-container">
+                <img src="">
+                <h4>Z Terminal App</h4>
+                <p class="single-project-content">
+                    🛠️ Python, SQLite <br/>
+                    Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
+                </p>
+            </div>
+            <div class="single-project-container">
+                <img src="">
+                <h4>Cruzeiro Calendar Script</h4>
+                <p class="single-project-content">
+                    🛠️ Python, MongoDB, Google Calendar API <br/>
+                    Description bla bla bla bla bla blabdjiwbfouw oiugewfou iufg o oiug oiug ipu rg
+                </p>
+            </div>
+        </div>
                                         
         <h1>UI IN DEVELOPMENT...</h1>
         <!-- ============================================ -->
@@ -148,43 +141,42 @@
         <!-- ============================================ -->
 
 
-        <section id="about">
-            <div class="about-container">
-                <div class="about-title">
-                    <h1>About Me</h1>
-                </div>
-                <div class="about-content">
-                    <p class="about-content-text">Here are a couple things I enjoy doing outside of Computer Science. Running, 
-                        playing football, travelling, reading novels, hiking, 
-                        snowboarding, swimming, listening to music, drinking water 💧.</p>
-                </div>
-                <div class="about-gallery">
-                    <!--Picture 1-->
-                    <picture class="cs-image">
-                        <img src="/personal-website-photos/img-abt-1.jpeg" height="100" width="100">
-                    </picture>
-                    <!--Picture 2-->
-                    <picture class="cs-image">
-                        <img src="/personal-website-photos/img-abt-2.jpeg" height="100" width="100">
-                    </picture>
-                    <!--Picture 3-->
-                    <picture class="cs-image">
-                        <img src="/personal-website-photos/img-abt-3.jpeg" height="100" width="100">
-                    </picture>
-                </div>
+        <div class="about-container" id="about">
+            <div class="about-title">
+                <h1>About Me</h1>
             </div>
-        </section>
+            <div class="about-content">
+                <p class="about-content-text">Here are a couple things I enjoy doing outside of Computer Science. Running, 
+                    playing football, travelling, reading novels, hiking, 
+                    snowboarding, swimming, listening to music, drinking water 💧.</p>
+            </div>
+            <div class="about-gallery">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                    <img src="/personal-website-photos/img-abt-1.jpeg" height="100" width="100">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <img src="/personal-website-photos/img-abt-2.jpeg" height="100" width="100">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <img src="/personal-website-photos/img-abt-3.jpeg" height="100" width="100">
+                </picture>
+            </div>
+        </div>
 
 
         <!-- ============================================ -->
         <!--                Footer                        -->
         <!-- ============================================ -->
 
-        <footer>
+        <footer id="contact">
             <div class="footer-contact">
                 Contact me on any of the below!
             </div>
 
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>
