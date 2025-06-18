@@ -124,38 +124,50 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #C6CED0;
+  padding-bottom: 20%;
+  padding-top: 20%;
 }
 
 .hero-container img {
-  width: 80%;
+  width: 60%;
   border-radius: 5%;
+  max-width: 33ch;
+  
 }
 
 .hero-container p {
-  width: 80%;
+  width: 90%;
   text-align: center;
+  max-width: 50ch;
+  padding-bottom: 10%;
+  margin: 0;
+  font-size: 1.03rem;
 }
+
+/* ==========================
+            EXPERIENCE 
+   ========================== */
 
 .experience-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ACC2D4;
+  padding-bottom: 20%;
+  padding-top: 20%;
 }
 
-.experience-container h1 {
+.experience-title h1 {
   align-items: center;
   text-align: center;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 10%;
 }
 
-/* ==========================
-            TIMELINE 
-   ========================== */
 .timeline {
   margin: 0 auto;
   max-width: 750px;
-  padding: 25px;
   display: grid;
   grid-template-columns: 1fr 3px 3fr;
 }
@@ -212,3 +224,56 @@ nav {
   line-height: 1.5;
   font-size: 0.9em;
 }
+
+/* ==========================
+            PROJECTS 
+   ========================== */
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-primary-2);
+  padding-bottom: 20%;
+  padding-top: 20%;
+}
+
+.projects-title h1 {
+  align-items: center;
+  text-align: center;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 10%;
+}
+
+.single-project-container {
+  background-color: var(--clr-primary-1);
+  margin: 10%;
+  width: 90%;
+  max-width: 50ch;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-project-container img{
+  margin: 5% 10% 5% 10%;
+  width: 90%;
+  border-radius: 1%;
+}
+
+.single-project-container h2{
+  text-align: left;
+  width: 90%;
+  font-weight: normal;
+  font-size: 1.175rem;
+}
+
+.single-project-container p{
+  text-align: left;
+  width: 90%;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
