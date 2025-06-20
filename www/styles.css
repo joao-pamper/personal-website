@@ -416,6 +416,7 @@ nav {
   right: 0;
   height: 100%;
   width: 100%;
+  max-width: 33ch;
   border-radius: 5%;
   opacity: 0;
   transition: .5s ease;
