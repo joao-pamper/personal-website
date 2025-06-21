@@ -140,7 +140,6 @@ nav {
   width: 90%;
   text-align: center;
   max-width: 50ch;
-  padding-bottom: 10%;
   margin: 0;
   font-size: 1.03rem;
 }
@@ -167,7 +166,6 @@ nav {
     width: 90%;
     text-align: left;
     max-width: 50ch;
-    padding-bottom: 3rem;
     margin: 0;
     font-size: 1.03rem;
   }
@@ -317,11 +315,18 @@ nav {
   margin: 5% 10% 5% 10%;
   width: 90%;
   border-radius: 1%;
+  aspect-ratio: 16 / 9;
 }
 
-.single-project-container h2{
+.single-project-container a{
   text-align: left;
   width: 90%;
+  color: var(--clr-neutral-1);
+}
+
+.single-project-title{
+  text-align: left;
+  width: 100%;
   font-weight: normal;
   font-size: 1.175rem;
 }
