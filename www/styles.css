@@ -324,6 +324,14 @@ nav {
   color: var(--clr-neutral-1);
 }
 
+.single-project-container a:hover{
+  color: var(--clr-neutral-2);
+}
+
+.single-project-container a:active{
+  color: var(--clr-neutral-2);
+}
+
 .single-project-title{
   text-align: left;
   width: 100%;
