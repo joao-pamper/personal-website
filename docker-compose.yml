@@ -1,0 +1,13 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /etc/letsencrypt/live/www.joaopereira.ca/fullchain.pem:/etc/nginx/ssl/fullchain.pem:ro
+      - /etc/letsencrypt/live/www.joaopereira.ca/privkey.pem:/etc/nginx/ssl/privkey.pem:ro
+      - ./logs:/var/log/nginx
+    restart: unless-stopped
