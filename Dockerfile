@@ -1,4 +1,9 @@
-FROM nginx:latest
+FROM node:20-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
 
-# Add website static files
-COPY html/ /var/www/html/
+FROM nginx:latest
+COPY --from=builder /app/out /var/www/html

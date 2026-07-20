@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-accent: #18447E;
+  --color-accent-light: #ACC2D4;
+  --color-surface: #C6CED0;
+  --color-dark: #0a0f1a;
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion: disable canvas animation and instant transitions */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
